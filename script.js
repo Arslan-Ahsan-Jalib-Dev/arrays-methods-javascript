@@ -20,3 +20,18 @@ myarray.map(item=>{
     result=item + result;
 })
 //console.log(result);
+// 2) Frequency of Number in the array
+
+var arr1=['a','b','c','d','a','b','d','d','d','d','a','b','a'];
+var count=[];
+   
+arr1.forEach((item)=>{
+   
+    if(count[item]){
+        count[item]++;
+    }
+    else{
+        count[item]=1;
+    }
+})
+console.log(count);
